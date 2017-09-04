@@ -1,0 +1,4 @@
+lane :test do
+  properties = property_file_read(file: "example.properties")
+  UI.message("VERSION from property file is " + properties["VERSION"])
+end
